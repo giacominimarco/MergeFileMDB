@@ -37,8 +37,10 @@
             this.ButtonSavePathMergeFile = new System.Windows.Forms.Button();
             this.TextBoxSavePathMergeFile = new System.Windows.Forms.TextBox();
             this.LabelPathSavePathMergeFile = new System.Windows.Forms.Label();
-            this.TextBoxMessage = new System.Windows.Forms.TextBox();
             this.ComboBoxTables = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelPathFileFirst
@@ -119,32 +121,42 @@
             this.LabelPathSavePathMergeFile.TabIndex = 6;
             this.LabelPathSavePathMergeFile.Text = "LabelPathSaveMergeFile";
             // 
-            // TextBoxMessage
-            // 
-            this.TextBoxMessage.Location = new System.Drawing.Point(12, 234);
-            this.TextBoxMessage.Multiline = true;
-            this.TextBoxMessage.Name = "TextBoxMessage";
-            this.TextBoxMessage.ReadOnly = true;
-            this.TextBoxMessage.Size = new System.Drawing.Size(399, 31);
-            this.TextBoxMessage.TabIndex = 9;
-            this.TextBoxMessage.TextChanged += new System.EventHandler(this.TextBoxMessage_TextChanged);
-            // 
             // ComboBoxTables
             // 
             this.ComboBoxTables.FormattingEnabled = true;
-            this.ComboBoxTables.Location = new System.Drawing.Point(12, 195);
+            this.ComboBoxTables.Location = new System.Drawing.Point(60, 196);
             this.ComboBoxTables.Name = "ComboBoxTables";
             this.ComboBoxTables.Size = new System.Drawing.Size(318, 23);
             this.ComboBoxTables.TabIndex = 10;
             this.ComboBoxTables.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTables_SelectedIndexChanged);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 282);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(941, 324);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(402, 195);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 280);
+            this.ClientSize = new System.Drawing.Size(1020, 665);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ComboBoxTables);
-            this.Controls.Add(this.TextBoxMessage);
             this.Controls.Add(this.ButtonSavePathMergeFile);
             this.Controls.Add(this.TextBoxSavePathMergeFile);
             this.Controls.Add(this.LabelPathSavePathMergeFile);
@@ -156,6 +168,7 @@
             this.Controls.Add(this.LabelPathFileFirst);
             this.Name = "Form1";
             this.Text = "FormMergeFileMDB";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,7 +185,8 @@
         private System.Windows.Forms.Button ButtonSavePathMergeFile;
         private System.Windows.Forms.TextBox TextBoxSavePathMergeFile;
         private System.Windows.Forms.Label LabelPathSavePathMergeFile;
-        private System.Windows.Forms.TextBox TextBoxMessage;
         private System.Windows.Forms.ComboBox ComboBoxTables;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
     }
 }
